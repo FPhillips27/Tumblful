@@ -1,7 +1,5 @@
 class ImageLinksController < ApplicationController
 
-    before_action :authenticate_user!
-
     def index
         @image_links = ImageLink.all
     end

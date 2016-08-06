@@ -1,6 +1,5 @@
 class FollowsController < ApplicationController
   # All actions in this controller require the presence of an authenticated user.
-  before_filter :authenticate_user!
 
   # GET /follows
   #

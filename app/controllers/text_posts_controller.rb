@@ -1,7 +1,5 @@
 class TextPostsController < ApplicationController
 
-    before_action :authenticate_user!
-
         #GET
     def index
         @text_posts = TextPost.all
