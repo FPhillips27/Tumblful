@@ -65,3 +65,6 @@ end
   gem "codeclimate-test-reporter", group: :test, require: nil
 
   gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+  gem 'rails-controller-testing'
+  
+  gem 'record_tag_helper', '~> 1.0'
