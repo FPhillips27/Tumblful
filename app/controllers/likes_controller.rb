@@ -1,5 +1,8 @@
 class LikesController < ApplicationController
 
+  before_action :authenticate_user!
+
+
   def create
     @resource = find_resource
     @like = Like.create(like_params)
