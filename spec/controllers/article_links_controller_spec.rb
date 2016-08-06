@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ArticleLinksController do
+RSpec.describe ArticleLinksController, :type => :controller do
 context "when no user is logged in" do
     describe "GET index" do
       subject { response }

@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe LikesController do
+RSpec.describe LikesController, :type => :controller do
 
 end

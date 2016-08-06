@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TextPostsController do
+RSpec.describe TextPostsController, :type => :controller do
 context "when no user is logged in" do
     describe "GET index" do
       subject { response }

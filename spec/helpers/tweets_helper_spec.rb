@@ -10,5 +10,5 @@ require 'spec_helper'
 #     end
 #   end
 # end
-describe TweetsHelper do
+RSpec.describe TweetsHelper, :type => :helper do
 end

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ApplicationHelper do
+RSpec.describe ApplicationHelper, :type => :helper do
   describe "#notices" do
     context "when flash[:success] is set" do
       before { flash[:success] = "Success!!" }

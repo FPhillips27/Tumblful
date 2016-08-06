@@ -10,5 +10,5 @@ require 'spec_helper'
 #     end
 #   end
 # end
-describe FollowsHelper do
+RSpec.describe FollowsHelper, :type => :helper do
 end
