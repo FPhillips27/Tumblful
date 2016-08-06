@@ -20,6 +20,6 @@ class LikesController < ApplicationController
       type = params[:like][:likeable_type].safe_constantize
       id = params[:like][:likeable_id]
 
-      type.send(:find, id)
+      type.send(:find, id) unless id.nil?
     end
 end
