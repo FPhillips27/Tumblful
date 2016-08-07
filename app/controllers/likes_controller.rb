@@ -7,7 +7,7 @@ class LikesController < ApplicationController
 
     # Respond to different request formats
     respond_to do |format|
-      format.html { redirect_to :back }
+      format.html { redirect_back(fallback_location: root_path) }
       format.js
     end
   end
