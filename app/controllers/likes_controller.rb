@@ -18,7 +18,8 @@ class LikesController < ApplicationController
     end
   
     def find_resource
-      type = params[:like][:likeable_type].safe_constantize
+      type = like_params[:likeable_type].safe_constantize
+      #type = params[:like][:likeable_type].safe_constantize
       id = params[:like][:likeable_id]
 
       type.send(:find, id) unless id.nil?
