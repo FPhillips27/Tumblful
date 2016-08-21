@@ -32,7 +32,7 @@ RSpec.describe User, :type => :model do
       @ids = users.map(&:id)
     end
 
-    it "should contain all users except the on passed, ordered by name" do
+    it "should contain all users except the one passed, ordered by name" do
       User.all_except(user).load.map(&:id).should == @ids
     end
   end
