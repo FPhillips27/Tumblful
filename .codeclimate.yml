@@ -17,7 +17,9 @@ engines:
       - python
       - php
     exclude_fingerprints:
-    - a493a604b888117652c1c9303270ddfa
+    - a493a604b888117652c1c9303270ddfa #Ignores a false positive duplication
+    - c1805b8555a6af71dcdff85a6c31e06f #Ignores a false positive duplication
+    - dd72ef9d46c20ad62f9befae459b9d58 #Ignores a false positive duplication
   eslint:
     enabled: true
   fixme:
