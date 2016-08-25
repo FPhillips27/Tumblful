@@ -38,6 +38,7 @@ context "when a user is logged in"
       
       after { logout(:user) }
     end
+
     describe "POST create" do
       subject { response }
       before {
@@ -47,6 +48,16 @@ context "when a user is logged in"
       }
 
       it { should_not be_successful }
+      after { logout(:user) }
+    end
+
+    describe "DELETE destroy" do
+      let!(:follow) { FactoryGirl.create(:follow) }
+      subject { response }
+
+      before { delete :destroy, :id => follow.id }
+
+      it{ should_not be_successful }
       after { logout(:user) }
     end
   end
