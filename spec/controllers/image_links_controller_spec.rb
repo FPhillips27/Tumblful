@@ -37,4 +37,15 @@ context "when a user is logged in"
       
       after { logout(:user) }
     end
+    describe "POST create" do
+      subject { response }
+      before {
+        user = FactoryGirl.create(:user)
+        login_as(user, :scope => :user)
+        post :create, :follow => { :following_id => 1 }
+      }
+
+      it { should_not be_successful }
+      after { logout(:user) }
+    end
   end
