@@ -35,5 +35,6 @@ context "when a user is logged in"
       }
 
       it { should be_successful }
+      after { logout(:user) }
     end
   end
