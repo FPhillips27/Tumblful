@@ -15,7 +15,7 @@ context "when no user is logged in" do
       it { should_not be_successful }
     end
         describe "DELETE destroy" do
-      let(:follow) { FactoryGirl.create(:follow) }
+      let!(:follow) { FactoryGirl.create(:follow) }
       subject { response }
 
       before { delete :destroy, :id => follow.id }
