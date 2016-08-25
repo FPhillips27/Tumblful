@@ -30,6 +30,9 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
   config.include Capybara::DSL
+  
+  config.include Warden::Test::Helpers
+    #The above is from "How To: Test with Capybara" on the Devise wiki to avoid having to create the User object in the test.
 end
 
 Shoulda::Matchers.configure do |config|

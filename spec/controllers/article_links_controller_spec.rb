@@ -15,7 +15,7 @@ context "when no user is logged in" do
       it { should_not be_successful }
     end
         describe "DELETE destroy" do
-      let(:follow) { FactoryGirl.create(:follow) }
+      let!(:follow) { FactoryGirl.create(:follow) }
       subject { response }
 
       before { delete :destroy, :id => follow.id }
@@ -30,22 +30,10 @@ context "when a user is logged in"
     describe "GET index" do
       subject { response }
       before {
-          @user = User.create!({
-             :email => "testuser.rspec@invalid.com",
-             :name => "Testy McTesterson",
-             :username => "TestUser-Rspec",
-             :password => "testpassword",
-             :password_confirmation => "testpassword"
-           })
-        visit "#index"
-        find('#sign_in_form').fill_in('user_email', :with => 'testuser.rspec@invalid.com')
-        find('#sign_in_form').fill_in('user_password', :with => 'testpassword')
-        first('#sign_in_form input[type="submit"]').click
-        expect(page).to have_content("Welcome Back to Tumblful!")
+        user = FactoryGirl.create(:user)
+        login_as(user, :scope => :user)
       }
 
       it { should be_successful }
-      
-      after { User.first.destroy }
     end
   end
