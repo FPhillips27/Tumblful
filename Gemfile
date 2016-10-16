@@ -31,7 +31,7 @@ gem 'jbuilder'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', '0.4.2', require: false
 end
 
 # Use Capistrano for deployment
@@ -57,14 +57,14 @@ gem 'jquery-ui-rails'
 gem "rails_12factor"
 
 group :test do
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '1.4.5', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
 end
 
   gem "codeclimate-test-reporter", group: :test, require: nil
 
-  gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+  gem 'nokogiri', '1.6.8.1'
   gem 'rails-controller-testing', '1.0.1'
   
   gem 'record_tag_helper', '~> 1.0'
