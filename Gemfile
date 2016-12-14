@@ -12,7 +12,7 @@ gem 'pg', '0.19.0'
 gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '3.0.3'
+gem 'uglifier', '3.0.4'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails'
