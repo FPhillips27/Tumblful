@@ -254,6 +254,7 @@ DEPENDENCIES
   sass-rails
   sdoc (= 0.4.2)
   shoulda-matchers
+  simplecov
   therubyracer
   turbolinks
   uglifier (= 3.0.4)

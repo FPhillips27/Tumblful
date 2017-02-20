@@ -62,6 +62,7 @@ group :test do
   gem 'database_cleaner'
 end
 
+  gem "simplecov", group: :test, require: nil
   gem "codeclimate-test-reporter", group: :test, require: nil
 
   gem 'nokogiri', '1.7.0.1'
