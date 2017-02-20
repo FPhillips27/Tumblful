@@ -121,7 +121,7 @@ GEM
     multi_json (1.12.1)
     multi_test (0.1.2)
     nio4r (1.2.1)
-    nokogiri (1.6.8.1)
+    nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     pg (0.19.0)
@@ -244,7 +244,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails (= 4.2.2)
   jquery-ui-rails
-  nokogiri (= 1.6.8.1)
+  nokogiri (= 1.7.0.1)
   pg (= 0.19.0)
   rails
   rails-controller-testing (= 1.0.1)
