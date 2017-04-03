@@ -65,7 +65,7 @@ end
   gem "simplecov", group: :test, require: nil
   gem "codeclimate-test-reporter", group: :test, require: nil
 
-  gem 'nokogiri', '1.7.0.1'
+  gem 'nokogiri', '1.7.1'
   gem 'rails-controller-testing', '1.0.1'
   
   gem 'record_tag_helper', '~> 1.0'
